@@ -8,6 +8,15 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    
+<style>
+* {box-sizing: border-box;}
+.column {float: left; padding: 10px;} /* Create two unequal columns that floats next to each other */
+.left {width: 20%;}
+.right {width: 80%;}
+.row:after {content: ""; display: table; clear: both;} /* Clear floats after the columns */
+</style>
+
 </head>
 
 <body>
@@ -36,24 +45,37 @@
         </div>
     </nav>
 
-    <div class="container">
-        <h1>Jose F. C. Wenceslau</h1>
-        <p>Hello and welcome to my personal webpage!</p>
-        <p>My name is José Francisco Carminatti Wenceslau. I hold a bachelors degree in Biological Sciences from Universidade Estadual Paulista 
+    <div class="row">
+        <div class="column left" style="background-color:#bbb;">
+            <ul class="nav justify-content-center"><img src="./images/profile.png" alt="Hi, I´m José Francisco!" style="width:100%">
+                <h3>José F. C. Wenceslau</h3>
+                <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/josefranciscocw">LinkedIn</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://www.researchgate.net/profile/Jose-F-C-Wenceslau">ResearchGate</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://scholar.google.com/citations?user=fdI3x6sAAAAJ">Google Scholar</a></li>
+            </ul>
+        </div>
+        <div class="column right">
+            <h2>Hello and welcome to my personal webpage!</h2>
+            <p>My name is José Francisco Carminatti Wenceslau. I hold a bachelors degree in Biological Sciences from Universidade Estadual Paulista 
             ''Júlio de Mesquita Filho'' (2015), with specialisation in zoology and tropical forestry by Van Hall Larenstein, 
             University of Applied Sciences (2013), The Netherlands; and an Erasmus Mundus Master Degree in Toopical Biodiversity and Ecosystems by 
             Université Libre de Bruxelles and Vrije Universiteit Brussel, Belgium (2017), in partnership with Università degli Studi di Firenze, Italy, 
             for the study of tropical and subtropical ecosystems, besides Universiti Malaysia Terengganu, Malaysia, and University of Queensland, 
             Australia, for modules on marine ecosystems and the development of master thesis. I currently am a doctoral student in Remote Sensing at 
             the Instituto Nacional de Pesquisas Espaciais (INPE).</p> 
-        <p>I have experience researching animal populations and communities in five continents. As a Science Without Borders and Erasmus Mundus scholar, 
+            <p>I have experience researching animal populations and communities in five continents. As a Science Without Borders and Erasmus Mundus scholar, 
             I was able to survey chimpanzees in Guinea-Bissau, green turtles in Malaysia and wasps in Brazil. Additionally, I counts with over three years
-             of experience as an environmental consultant, having worked in Australia, where I was responsible for creating reports and plans to evaluate 
-             and manage the environmental impacts and restoration following anthropogenic changes to the landscape, and also in Brazil, where I worked across
-              multiple fronts of environmental restoration and climate resilience, providing legal and environmental advice to rural producers, private 
-              companies, and governamental bodies. Finally, I has experience with multilingual education, having worked as a tutor of physics, chemistry, 
-              biology for high school students and as a teacher of mathematics, Portuguese and English to adult and young students through Brazil, Spain, 
-              and Germany. </p>
+            of experience as an environmental consultant, having worked in Australia, where I was responsible for creating reports and plans to evaluate 
+            and manage the environmental impacts and restoration following anthropogenic changes to the landscape, and also in Brazil, where I worked across
+            multiple fronts of environmental restoration and climate resilience, providing legal and environmental advice to rural producers, private 
+            companies, and governamental bodies. Finally, I has experience with multilingual education, having worked as a tutor of physics, chemistry, 
+            biology for high school students and as a teacher of mathematics, Portuguese and English to adult and young students through Brazil, Spain, 
+            and Germany. </p>
+        </div>
+    </div>
+
+    <div class="container">
+        
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
