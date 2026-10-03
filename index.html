@@ -11,7 +11,7 @@
     
 <style>
 * {box-sizing: border-box;}
-.column {float: left; padding: 10px;} /* Create two unequal columns that floats next to each other */
+.column {float: left;} /* Create two unequal columns that floats next to each other */
 .left {width: 20%;}
 .right {width: 80%;}
 .row:after {content: ""; display: table; clear: both;} /* Clear floats after the columns */
@@ -47,7 +47,8 @@
 
     <div class="row">
         <div class="column left" style="background-color:#bbb;">
-            <ul class="nav justify-content-center"><img src="./images/profile.png" alt="Hi, I´m José Francisco!" style="width:100%">
+            <ul class="nav flex-column justify-content-center">
+                <img src="./images/profile.png" alt="Hi, I'm José Francisco!" style="width:100%">
                 <h3>José F. C. Wenceslau</h3>
                 <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/josefranciscocw">LinkedIn</a></li>
                 <li class="nav-item"><a class="nav-link" href="https://www.researchgate.net/profile/Jose-F-C-Wenceslau">ResearchGate</a></li>
